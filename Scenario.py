@@ -4,7 +4,6 @@ from Ifttt import Ifttt
 import time
 import json
 
-
 BINARY_FROM = "SPANNER"
 DEVICE_ID = "340040000f51353532343635"
 ACCESS_TOKEN = "9e4c2afdbe47d87956ac7795e7287aa8c85e697b"
