@@ -5,10 +5,6 @@ import time
 import json
 
 
-
-
-
-
 BINARY_FROM = "SPANNER"
 DEVICE_ID = "340040000f51353532343635"
 ACCESS_TOKEN = "9e4c2afdbe47d87956ac7795e7287aa8c85e697b"
@@ -86,16 +82,6 @@ def C1_validate_ifttt_buttonOn():
     else:
         return 1
 
-# Cloud Functionality                                                                                                                                                                                         
-def C2_validate_ifttt_buttonOff():
-    ifttt.buttonOff()
-    time.sleep(2)
-    # check blue led state                                                                                                                                                                                    
-    value = tester.digitalRead("D1")
-    if (tester.assert_spanner(value) == 0):
-        return 0
-    else:
-        return 1
 
 if __name__ == "__main__":
     EXEC_TEST_CASE(B1_validate_button_press())
