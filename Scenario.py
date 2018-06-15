@@ -5,9 +5,7 @@ import json
 
 DEVICE_ID = "340040000f51353532343635"
 ACCESS_TOKEN = "54c8df8cb04da38a34e26ec6da046abf92182de4"
-tester = Tester('340040000f51353532343635')
-
-testboard = Tester(DEVICE_ID)
+tester = Tester(DEVICE_ID)
 ifttt = Ifttt()
 
 # D7 -> Relay PIN
