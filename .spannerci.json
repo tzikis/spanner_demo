@@ -1,1 +1,7 @@
-{ "username":"spanner", "token":"uxLwMTvCcDAbjqSydwE9Hwq66jSePbAw", "bundle": "spanner_final" , "Check Code Quality":"ignore" , "Build Binary" : "ignore", "Initiate Wi-Fi Setup": "ignore" }
+{ 
+  "username":"spanner", 
+  "token":"uxLwMTvCcDAbjqSydwE9Hwq66jSePbAw", 
+  "bundle":"spanner_final", 
+  "Check Code Quality":"ignore", 
+  "Build Binary":"ignore", "Initiate Wi-Fi Setup":"ignore" 
+}
