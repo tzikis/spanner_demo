@@ -3,10 +3,11 @@ from Ifttt import Ifttt
 import time
 import json
 
-TESTBOARD_ID = "340040000f51353532343635"
-ACCESS_TOKEN = "9e4c2afdbe47d87956ac7795e7287aa8c85e697b"
+DEVICE_ID = "340040000f51353532343635"
+ACCESS_TOKEN = "54c8df8cb04da38a34e26ec6da046abf92182de4"
+tester = Tester('340040000f51353532343635')
 
-testboard = Tester(TESTBOARD_ID)
+testboard = Tester(DEVICE_ID)
 ifttt = Ifttt()
 
 # D7 -> Relay PIN
