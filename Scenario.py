@@ -1,13 +1,13 @@
-from Tester import Tester
+from Testboard import Testboard
 from Ifttt import Ifttt
 import time
 import json
 
 TESTBOARD_ID = "340040000f51353532343635"
-ACCESS_TOKEN = "9e4c2afdbe47d87956ac7795e7287aa8c85e697b"
+IFTTT_ACCESS_TOKEN = "54c8df8cb04da38a34e26ec6da046abf92182de4"
 
-testboard = Tester(TESTBOARD_ID)
-ifttt = Ifttt()
+testboard = Testboard(TESTBOARD_ID)
+ifttt = Ifttt(IFTTT_ACCESS_TOKEN)
 
 # D7 -> Relay PIN
 RELAY_PIN = "D7"
@@ -19,29 +19,29 @@ def validate_network_cmd_on():
     time.sleep(2)
 
     # check PIN state
-    value = tester.digitalRead(RELAY_PIN)
-    if (tester.assert_spanner(value) == 1):
-        return 0
+    value = testboard.digitalRead(RELAY_PIN)
+    if (testboard.assert_spanner(value) == 1):
+        return 0 # Success
     else:
-        return 1
+        return 1 # Failure
 
 # Cloud Functionality
-def validate_network_cmd_offf():
+def validate_network_cmd_off():
     ifttt.buttonOff()
 
     time.sleep(2)
 
     # check PIN state
-    value = tester.digitalRead(RELAY_PIN)
-    if (tester.assert_spanner(value) == 0):
-        return 0
+    value = testboard.digitalRead(RELAY_PIN)
+    if (testboard.assert_spanner(value) == 0):
+        return 0 # Success
     else:
-        return 1
+        return 1 # Failure
 
 if __name__ == "__main__":
 
-    EXEC_TEST_CASE(validate_network_cmd_on())
+    run_test(validate_network_cmd_on())
 
     time.sleep(2)
 
-    EXEC_TEST_CASE(validate_network_cmd_off())
+    run_test(validate_network_cmd_off())
