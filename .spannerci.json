@@ -1,1 +1,9 @@
-{ "username":"spanner", "token":"iB6026Tpl4pUUiZRajspbtgAbK23bief", "bundle": "spanner_final" , "Check Code Quality":"ignore" , "Build Binary" : "ignore", "Initiate Wi-Fi Setup": "ignore" }
+{
+  "username":"spanner",
+  "token":"qlFw0SLcwXtBBftRlxb9AV0LsZrXOuOn",
+  "project":"spanner_final",
+  "code_quality":false,
+  "build_binary":false,
+  "deploy":false,
+  "tests":{"filename":"Scenario.py"}
+}
