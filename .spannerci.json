@@ -1,9 +1,10 @@
-{ 
-  "username":"spanner", 
-  "token":"iB6026Tpl4pUUiZRajspbtgAbK23bief",
+
+{
+  "username":"spanner",
+  "token":"qlFw0SLcwXtBBftRlxb9AV0LsZrXOuOn",
   "project":"spanner_final",
-  "code_quality": false,
-  "build_binary": false,
-  "deploy": false,
-  "tests": false
+  "code_quality":false,
+  "build_binary":false,
+  "deploy":false,
+  "tests":{"filename":"Scenario.py"}
 }
