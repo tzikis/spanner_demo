@@ -3,7 +3,6 @@ from Ifttt import Ifttt
 import time
 import json
 
-
 TESTBOARD_ID = "340040000f51353532343635"
 IFTTT_ACCESS_TOKEN = "54c8df8cb04da38a34e26ec6da046abf92182de4"
 
