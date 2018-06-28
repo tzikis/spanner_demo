@@ -1,7 +1,7 @@
 { 
   "username":"spanner", 
   "token":"yGQfBxncWgIFxG9EE4L5YmwPWJszk8yp",
-  "bundle":"spanner_final",
+  "project":"spanner_final",
   "code_quality": false,
   "build_binary": false,
   "deploy": false,
