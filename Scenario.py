@@ -14,7 +14,7 @@ RELAY_PIN = "D7"
 
 # Cloud Functionality
 def validate_network_cmd_on():
-#    ifttt.buttonOn()
+    ifttt.buttonOn()
 
     testboard.digitalWrite(RELAY_PIN, 'HIGH')
     time.sleep(2)
@@ -34,7 +34,7 @@ def validate_network_cmd_on():
 
 # Cloud Functionality
 def validate_network_cmd_off():
-#    ifttt.buttonOff()
+    ifttt.buttonOff()
 
     testboard.digitalWrite(RELAY_PIN, 'LOW')
     time.sleep(2)
