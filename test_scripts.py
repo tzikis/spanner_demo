@@ -1,4 +1,4 @@
-from Testboard import Testboard
+from SpannerTestboard import SpannerTestboard
 from Ifttt import Ifttt
 import time
 import json
