@@ -18,7 +18,7 @@ def set_request(endpoint):
     return r.text
 
 def send_command(command):
-    endpoint = 'https://maker.ifttt.com/trigger/'+command+'/with/key/'+ifttt_key
+    endpoint = 'https://maker.ifttt.com/trigger/'+command+'/with/key/'+ IFTTT_ACCESS_TOKEN
     return set_request(endpoint)
 
 # Cloud Functionality
