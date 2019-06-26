@@ -28,10 +28,7 @@ def test_validate_network_cmd_on():
 
     # check PIN state
     value = testboard.digitalRead(RELAY_PIN)
-    if (testboard.assert_spanner(value) == 1):
-        return 0 # Success
-    else:
-        return 1 # Failure
+    assert value !=0
 
 # Cloud Functionality
 def test_validate_network_cmd_off():
@@ -40,7 +37,4 @@ def test_validate_network_cmd_off():
 
     # check PIN state
     value = testboard.digitalRead(RELAY_PIN)
-    if (testboard.assert_spanner(value) == 0):
-        return 0 # Success
-    else:
-        return 1 # Failure
+    assert value == 0
