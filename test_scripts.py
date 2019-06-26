@@ -1,5 +1,4 @@
 from SpannerTestboard import SpannerTestboard
-from Ifttt import Ifttt
 import time
 import json
 import requests
