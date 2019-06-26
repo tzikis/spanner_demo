@@ -7,6 +7,7 @@ import pytest
 
 TESTBOARD_NAME = "Testboard1"
 IFTTT_ACCESS_TOKEN = "54c8df8cb04da38a34e26ec6da046abf92182de4"
+IFTTT_ACCESS_TOKEN = "czuDIqNzhH28gOlR15tUCP"
 
 testboard = SpannerTestboard(TESTBOARD_NAME)
 # D7 -> Relay PIN
